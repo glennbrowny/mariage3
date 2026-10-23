@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Daniel &amp; Grâce — Nous nous marions · 12 décembre 2026</title>
+  <meta name="description" content="Daniel et Grâce ont la joie de vous inviter à célébrer leur mariage le samedi 12 décembre 2026 à Libreville. Découvrez le programme et confirmez votre présence.">
+  <meta name="theme-color" content="#0c0a09">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Partage WhatsApp / réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Daniel & Grâce se marient · 12.12.2026">
+  <meta property="og:description" content="Vous êtes invité(e) ! Ouvrez votre invitation et confirmez votre présence.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:image:width" content="736">
+  <meta property="og:image:height" content="386">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%230c0a09' stroke='%23d4af6a' stroke-width='2'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='26' fill='%23d4af6a'%3ED%26G%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/rings.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    document.documentElement.classList.add("js");
+    try { if (sessionStorage.getItem("invitationOpened") || location.hash) document.documentElement.classList.add("opened"); } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#invitation">Aller au contenu</a>
+
+  <!-- ============ OUVERTURE DE L'INVITATION ============ -->
+  <div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+    <div class="intro__panel intro__panel--top" aria-hidden="true"><div class="intro__img"></div></div>
+    <div class="intro__panel intro__panel--bottom" aria-hidden="true"><div class="intro__img"></div></div>
+    <canvas class="bokeh intro__bokeh" data-count="26" aria-hidden="true"></canvas>
+    <div class="intro__grain" aria-hidden="true"></div>
+    <div class="intro__content">
+      <p class="intro__eyebrow">Vous êtes invité(e)</p>
+      <div class="seal" aria-hidden="true">
+        <svg class="seal__ring" viewBox="0 0 200 200">
+          <defs><path id="sealCircle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#sealCircle" startOffset="0">· NOUS NOUS MARIONS · 12 · 12 · 2026 · POUR TOUJOURS </textPath></text>
+        </svg>
+        <span class="seal__mono" data-bind="initials">D&amp;G</span>
+      </div>
+      <h2 class="intro__names" id="introTitle"><span data-bind="groom">Daniel</span> <em>&amp;</em> <span data-bind="bride">Grâce</span></h2>
+      <p class="intro__date" data-bind="dateShort">12 · 12 · 2026</p>
+      <button type="button" class="btn btn--gold btn--lg intro__open magnetic">
+        <span>Ouvrir l'invitation</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ============ EN-TÊTE ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="logo" aria-label="Retour en haut de l'invitation">
+        <span class="logo__mark" data-bind="initials">D&amp;G</span>
+        <span class="logo__text"><small data-bind="dateShort">12 · 12 · 2026</small><span><span data-bind="groom">Daniel</span> <em>&amp;</em> <span data-bind="bride">Grâce</span></span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#invitation" class="nav__link">Invitation</a></li>
+          <li><a href="#maries" class="nav__link">Les mariés</a></li>
+          <li><a href="#histoire" class="nav__link">Notre histoire</a></li>
+          <li><a href="#galerie" class="nav__link">Galerie</a></li>
+          <li><a href="#details" class="nav__link">Le jour J</a></li>
+          <li class="nav__only-mobile"><a href="#invites" class="nav__link">Ils seront là</a></li>
+          <li class="nav__only-mobile"><a href="#faq" class="nav__link">FAQ</a></li>
+        </ul>
+        <a href="#rsvp" class="btn btn--gold nav__cta-mobile">Confirmer ma présence</a>
+      </nav>
+
+      <a href="#rsvp" class="btn btn--gold header__cta magnetic">
+        <span>RSVP</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 1. HÉRO ============ -->
+    <section class="hero" id="accueil" aria-label="Accueil">
+      <!-- Fond animé : alliances (zoom lent, reflet, parallaxe) + bokeh -->
+      <div class="hero__bg" data-parallax="0.3" aria-hidden="true">
+        <img class="hero__atmos" src="assets/img/rings-blur.webp" alt="" width="736" height="1313">
+        <div class="hero__rings" data-depth="-14">
+          <img src="assets/img/rings.webp" alt="" width="736" height="1313" fetchpriority="high">
+        </div>
+      </div>
+      <div class="hero__veil"></div>
+      <canvas class="bokeh" data-count="34" aria-hidden="true"></canvas>
+      <div class="hero__orbs" aria-hidden="true">
+        <span class="orb orb--1"></span><span class="orb orb--2"></span><span class="orb orb--3"></span>
+      </div>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="hero__monogram" aria-hidden="true" data-bind="initials">D&amp;G</div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow"><span class="eyebrow__line"></span>Nous nous marions</p>
+          <h1 class="hero__names">
+            <span class="hero__name" data-bind="groom" data-split>Daniel</span>
+            <span class="hero__amp" aria-hidden="true">&amp;</span><span class="sr-only"> et </span>
+            <span class="hero__name" data-bind="bride" data-split>Grâce</span>
+          </h1>
+          <p class="hero__lead">
+            Venez célébrer avec nous
+            <span class="rotator" aria-hidden="true">
+              <span class="rotator__item is-active">l'amour</span>
+              <span class="rotator__item">notre union</span>
+              <span class="rotator__item">la joie</span>
+              <span class="rotator__item">une nouvelle vie</span>
+            </span>
+          </p>
+          <ul class="hero__meta">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span data-bind="dateLong">Samedi 12 décembre 2026</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-bind="ceremony.time">14h00</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-bind="city">Libreville, Gabon</span></li>
+          </ul>
+          <div class="hero__actions">
+            <a href="#rsvp" class="btn btn--gold btn--lg magnetic">
+              <span>Confirmer ma présence</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#invitation" class="btn btn--ghost btn--lg magnetic">
+              <span>Découvrir l'invitation</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <figure class="hero__card hero__card--main" data-depth="16">
+            <img src="assets/img/couple.webp" alt="" width="736" height="920">
+          </figure>
+          <figure class="hero__card hero__card--sub" data-depth="34">
+            <img src="assets/img/bride-smile.webp" alt="" width="460" height="460">
+          </figure>
+          <figure class="hero__card hero__card--sub2" data-depth="26">
+            <img src="assets/img/groom-portrait.webp" alt="" width="420" height="420">
+          </figure>
+          <div class="hero__badge" data-depth="48">
+            <span class="hero__badge-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>
+            </span>
+            <span><strong data-bind="dateShort">12 · 12 · 2026</strong><small>Sauvegardez la date</small></span>
+          </div>
+          <div class="hero__ring"></div>
+        </div>
+      </div>
+
+      <a href="#invitation" class="hero__scroll" aria-label="Défiler vers l'invitation">
+        <span>Défiler</span><i></i>
+      </a>
+    </section>
+
+    <!-- Bandeau défilant -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span><span data-bind="groom">Daniel</span> &amp; <span data-bind="bride">Grâce</span></span><i>✦</i>
+        <span data-bind="dateShort">12 · 12 · 2026</span><i>✦</i>
+        <span>Pour le meilleur</span><i>✦</i>
+        <span data-bind="hashtag">#DanielEtGrace2026</span><i>✦</i>
+        <span><span data-bind="groom">Daniel</span> &amp; <span data-bind="bride">Grâce</span></span><i>✦</i>
+        <span data-bind="dateShort">12 · 12 · 2026</span><i>✦</i>
+        <span>Pour le meilleur</span><i>✦</i>
+        <span data-bind="hashtag">#DanielEtGrace2026</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ 2. INVITATION OFFICIELLE ============ -->
+    <section class="section theme-light invitation" id="invitation">
+      <div class="container">
+        <article class="paper reveal">
+          <span class="paper__corner paper__corner--tl" aria-hidden="true"></span>
+          <span class="paper__corner paper__corner--tr" aria-hidden="true"></span>
+          <span class="paper__corner paper__corner--bl" aria-hidden="true"></span>
+          <span class="paper__corner paper__corner--br" aria-hidden="true"></span>
+
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line"></span><span class="eyebrow__num">01</span>L'invitation<span class="eyebrow__line"></span></p>
+          <p class="paper__families">
+            <span>M. &amp; Mme Jean Mbadinga</span>
+            <span class="paper__families-amp">et</span>
+            <span>M. &amp; Mme Paul Ndong</span>
+          </p>
+          <p class="paper__lead">ont la joie de vous faire part du mariage de leurs enfants</p>
+          <h2 class="paper__names"><span data-bind="groom">Daniel</span> <em>&amp;</em> <span data-bind="bride">Grâce</span></h2>
+          <div class="ornament" aria-hidden="true"><span></span><svg viewBox="0 0 40 20"><path d="M20 2c3 4 8 6 14 6-6 0-11 2-14 8-3-6-8-8-14-8 6 0 11-2 14-6z"/></svg><span></span></div>
+          <p class="paper__text split-words">Nous avons le plaisir de vous inviter à célébrer notre union, entourés de celles et ceux qui comptent le plus pour nous.</p>
+
+          <dl class="paper__grid">
+            <div><dt>Date</dt><dd data-bind="dateLong">Samedi 12 décembre 2026</dd></div>
+            <div><dt>Heure</dt><dd><span data-bind="ceremony.time">14h00</span> · cérémonie</dd></div>
+            <div><dt>Lieu</dt><dd data-bind="ceremony.place">Cathédrale Sainte-Marie</dd></div>
+            <div><dt>Dress code</dt><dd>Chic · ivoire, champagne &amp; or</dd></div>
+          </dl>
+
+          <a href="#rsvp" class="btn btn--dark magnetic paper__cta"><span>Je confirme ma présence</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 3. LES MARIÉS ============ -->
+    <section class="section couple" id="maries">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line"></span><span class="eyebrow__num">02</span>Les mariés<span class="eyebrow__line"></span></p>
+          <h2 class="section__title">Deux cœurs, <em>une même promesse</em></h2>
+        </header>
+
+        <div class="couple__grid">
+          <article class="person" data-tilt data-cursor="Lui">
+            <div class="person__media reveal-img">
+              <img src="assets/img/groom.webp" alt="Le marié en smoking blanc et nœud papillon noir, entouré de ses témoins" width="736" height="896" loading="lazy" data-parallax-img>
+            </div>
+            <div class="person__body">
+              <p class="person__role">Le marié</p>
+              <h3 class="person__name" data-bind="groom">Daniel</h3>
+              <p class="person__bio">Ingénieur passionné, amateur de jazz et de longues conversations au coucher du soleil. Toujours le premier à faire rire la table.</p>
+              <blockquote class="person__quote">« Grâce, tu es ma plus belle évidence. J'ai hâte de dire oui devant ceux que nous aimons. »</blockquote>
+            </div>
+          </article>
+
+          <div class="couple__amp" aria-hidden="true"><span>&amp;</span></div>
+
+          <article class="person" data-tilt data-cursor="Elle">
+            <div class="person__media reveal-img">
+              <img src="assets/img/bride.webp" alt="La mariée souriante ajustant un bijou dans ses cheveux" width="736" height="926" loading="lazy" data-parallax-img>
+            </div>
+            <div class="person__body">
+              <p class="person__role">La mariée</p>
+              <h3 class="person__name" data-bind="bride">Grâce</h3>
+              <p class="person__bio">Architecte au cœur créatif, elle aime les fleurs blanches, les voyages et les dimanches en famille. Son sourire illumine chaque pièce.</p>
+              <blockquote class="person__quote">« Daniel, avec toi chaque jour ressemble à une fête. Merci d'être mon refuge et mon meilleur ami. »</blockquote>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. NOTRE HISTOIRE ============ -->
+    <section class="section theme-light story" id="histoire">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line"></span><span class="eyebrow__num">03</span>Notre histoire<span class="eyebrow__line"></span></p>
+          <h2 class="section__title">D'un regard <em>à une vie</em></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="moment">
+            <span class="moment__dot" aria-hidden="true"></span>
+            <div class="moment__media reveal-img"><img src="assets/img/couple-close.webp" alt="Les mariés allongés l'un près de l'autre, tête contre tête" width="420" height="300" loading="lazy"></div>
+            <div class="moment__body">
+              <span class="moment__date">Juin 2019</span>
+              <h3 class="moment__title">La première rencontre</h3>
+              <p>Un mariage d'amis, une table voisine et une conversation qui ne s'est jamais vraiment arrêtée. Ce soir-là, nous avons dansé jusqu'à la dernière chanson.</p>
+            </div>
+          </li>
+          <li class="moment">
+            <span class="moment__dot" aria-hidden="true"></span>
+            <div class="moment__media reveal-img"><img src="assets/img/groom-details.webp" alt="Le marié boutonnant sa veste blanche ornée d'une boutonnière" width="430" height="430" loading="lazy"></div>
+            <div class="moment__body">
+              <span class="moment__date">Août 2024</span>
+              <h3 class="moment__title">La demande en mariage</h3>
+              <p>Au bord de l'océan, au coucher du soleil, Daniel a posé un genou à terre. Grâce a dit oui avant même la fin de la question.</p>
+            </div>
+          </li>
+          <li class="moment">
+            <span class="moment__dot" aria-hidden="true"></span>
+            <div class="moment__media reveal-img"><img src="assets/img/bride-jewel.webp" alt="Détail d'un bijou en cristal dans la coiffure de la mariée" width="320" height="320" loading="lazy"></div>
+            <div class="moment__body">
+              <span class="moment__date">Décembre 2024</span>
+              <h3 class="moment__title">Les fiançailles</h3>
+              <p>Nos deux familles réunies autour de la tradition, des chants et d'un repas inoubliable : le début officiel de notre grande aventure.</p>
+            </div>
+          </li>
+          <li class="moment">
+            <span class="moment__dot" aria-hidden="true"></span>
+            <div class="moment__media reveal-img"><img src="assets/img/couple-dress.webp" alt="La robe de la mariée étalée sur le parquet au pied d'un escalier en colimaçon" width="580" height="420" loading="lazy"></div>
+            <div class="moment__body">
+              <span class="moment__date">2026</span>
+              <h3 class="moment__title">Les préparatifs</h3>
+              <p>Robe, menu, musique, fleurs… Chaque détail a été pensé pour vous. Il ne manque plus qu'une chose : votre présence à nos côtés.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Citation -->
+    <section class="quote" aria-label="Citation">
+      <div class="quote__bg"><img src="assets/img/couple-stairs.webp" alt="" aria-hidden="true" width="736" height="520" loading="lazy"></div>
+      <div class="quote__veil"></div>
+      <div class="container quote__inner">
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <blockquote>
+          <p class="quote__text split-words">Aimer, ce n'est pas se regarder l'un l'autre, c'est regarder ensemble dans la même direction.</p>
+          <footer class="quote__author reveal">Antoine de Saint-Exupéry</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ 5. GALERIE ============ -->
+    <section class="section gallery" id="galerie">
+      <div class="container">
+        <header class="section__head section__head--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span><span class="eyebrow__num">04</span>Galerie</p>
+            <h2 class="section__title">Nos plus beaux <em>instants</em></h2>
+          </div>
+          <p class="section__intro">Quelques souvenirs avant le grand jour. Touchez une photo pour l'ouvrir en plein écran.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrer la galerie">
+          <span class="filters__pill" aria-hidden="true"></span>
+          <button type="button" class="filters__btn is-active" data-filter="all" aria-pressed="true">Tous</button>
+          <button type="button" class="filters__btn" data-filter="couple" aria-pressed="false">Le couple</button>
+          <button type="button" class="filters__btn" data-filter="bride" aria-pressed="false">La mariée</button>
+          <button type="button" class="filters__btn" data-filter="groom" aria-pressed="false">Le marié</button>
+          <button type="button" class="filters__btn" data-filter="moments" aria-pressed="false">Nos moments</button>
+        </div>
+
+        <div class="gallery__grid">
+          <button type="button" class="g-item g-item--tall" data-cat="couple"><img src="assets/img/couple.webp" alt="Les mariés allongés au pied d'un escalier en colimaçon, vus du dessus" width="736" height="920" loading="lazy"><span class="g-item__cap">Le couple</span></button>
+          <button type="button" class="g-item g-item--tall" data-cat="bride"><img src="assets/img/bride.webp" alt="La mariée en peignoir de satin blanc ajustant son bijou de cheveux" width="736" height="926" loading="lazy"><span class="g-item__cap">La mariée</span></button>
+          <button type="button" class="g-item g-item--tall" data-cat="groom"><img src="assets/img/groom.webp" alt="Le marié en smoking blanc entouré de ses témoins" width="736" height="896" loading="lazy"><span class="g-item__cap">Le marié</span></button>
+          <button type="button" class="g-item g-item--wide" data-cat="couple moments"><img src="assets/img/couple-stairs.webp" alt="L'escalier en colimaçon et les mariés au centre" width="736" height="520" loading="lazy"><span class="g-item__cap">Le tourbillon</span></button>
+          <button type="button" class="g-item" data-cat="bride moments"><img src="assets/img/bride-jewel.webp" alt="Bijou de cristal dans la coiffure de la mariée" width="320" height="320" loading="lazy"><span class="g-item__cap">Les détails</span></button>
+          <button type="button" class="g-item" data-cat="groom moments"><img src="assets/img/groom-details.webp" alt="Boutonnière et veste blanche du marié" width="430" height="430" loading="lazy"><span class="g-item__cap">Dernier ajustement</span></button>
+          <button type="button" class="g-item g-item--wide" data-cat="couple"><img src="assets/img/couple-close.webp" alt="Les mariés tête contre tête" width="420" height="300" loading="lazy"><span class="g-item__cap">Tête contre tête</span></button>
+          <button type="button" class="g-item" data-cat="bride"><img src="assets/img/bride-smile.webp" alt="Sourire radieux de la mariée" width="460" height="460" loading="lazy"><span class="g-item__cap">Son sourire</span></button>
+          <button type="button" class="g-item" data-cat="groom"><img src="assets/img/groom-portrait.webp" alt="Portrait du marié en nœud papillon" width="420" height="420" loading="lazy"><span class="g-item__cap">Son regard</span></button>
+          <button type="button" class="g-item g-item--wide" data-cat="moments"><img src="assets/img/couple-dress.webp" alt="La traîne de la robe étalée sur le parquet" width="580" height="420" loading="lazy"><span class="g-item__cap">La robe</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. DÉTAILS DE L'ÉVÉNEMENT ============ -->
+    <section class="section theme-light details" id="details">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line"></span><span class="eyebrow__num">05</span>Le jour J<span class="eyebrow__line"></span></p>
+          <h2 class="section__title">Tout ce qu'il faut <em>savoir</em></h2>
+        </header>
+
+        <div class="events">
+          <article class="event card" data-tilt data-event="ceremony">
+            <span class="event__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4M10 4h4"/><path d="M6 21V11l6-5 6 5v10"/><path d="M10 21v-5a2 2 0 0 1 4 0v5M3 21h18"/></svg></span>
+            <p class="event__kicker">01 · L'engagement</p>
+            <h3 class="event__title" data-bind="ceremony.title">Cérémonie religieuse</h3>
+            <ul class="event__list">
+              <li><strong>Date</strong><span data-bind="dateLong">Samedi 12 décembre 2026</span></li>
+              <li><strong>Heure</strong><span data-bind="ceremony.time">14h00</span></li>
+              <li><strong>Lieu</strong><span data-bind="ceremony.place">Cathédrale Sainte-Marie</span></li>
+              <li><strong>Adresse</strong><span data-bind="ceremony.address">Boulevard de l'Indépendance, Libreville</span></li>
+            </ul>
+            <div class="event__actions">
+              <a class="btn btn--dark btn--sm js-maps" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Voir sur Google Maps</span></a>
+              <button type="button" class="btn btn--outline btn--sm js-ics"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M12 14v4M10 16h4"/></svg><span>Ajouter au calendrier</span></button>
+            </div>
+            <a class="event__gcal js-gcal" href="#" target="_blank" rel="noopener">ou l'ajouter à Google Agenda →</a>
+          </article>
+
+          <article class="event card" data-tilt data-event="reception">
+            <span class="event__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 7a3 3 0 0 1-6 0z"/><path d="M12 13v8M8 21h8"/></svg></span>
+            <p class="event__kicker">02 · La fête</p>
+            <h3 class="event__title" data-bind="reception.title">Réception</h3>
+            <ul class="event__list">
+              <li><strong>Date</strong><span data-bind="dateLong">Samedi 12 décembre 2026</span></li>
+              <li><strong>Heure</strong><span data-bind="reception.time">18h30</span></li>
+              <li><strong>Lieu</strong><span data-bind="reception.place">Le Jardin des Palmiers</span></li>
+              <li><strong>Adresse</strong><span data-bind="reception.address">Bord de mer, Libreville</span></li>
+            </ul>
+            <div class="event__actions">
+              <a class="btn btn--dark btn--sm js-maps" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Voir sur Google Maps</span></a>
+              <button type="button" class="btn btn--outline btn--sm js-ics"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M12 14v4M10 16h4"/></svg><span>Ajouter au calendrier</span></button>
+            </div>
+            <a class="event__gcal js-gcal" href="#" target="_blank" rel="noopener">ou l'ajouter à Google Agenda →</a>
+          </article>
+        </div>
+
+        <div class="details__bottom">
+          <article class="dress reveal">
+            <p class="eyebrow"><span class="eyebrow__line"></span>Dress code</p>
+            <h3 class="dress__title">Chic &amp; lumineux</h3>
+            <p class="dress__text">Tenue de soirée élégante. Nous vous invitons à jouer avec les tons ivoire, champagne, doré et noir. Merci d'éviter le blanc intégral, réservé à la mariée.</p>
+            <ul class="swatches" aria-label="Palette de couleurs suggérée">
+              <li style="--c:#f4ede1"><span>Ivoire</span></li>
+              <li style="--c:#e3cfa6"><span>Champagne</span></li>
+              <li style="--c:#c9a35b"><span>Doré</span></li>
+              <li style="--c:#1a1714"><span>Noir</span></li>
+            </ul>
+          </article>
+
+          <div class="program">
+            <p class="eyebrow reveal"><span class="eyebrow__line"></span>Programme de la journée</p>
+            <ol class="program__list">
+              <li class="program__item"><time>13h30</time><div><h4>Accueil des invités</h4><p>Installation à la cathédrale</p></div></li>
+              <li class="program__item"><time>14h00</time><div><h4>Cérémonie</h4><p>Échange des vœux et des alliances</p></div></li>
+              <li class="program__item"><time>15h30</time><div><h4>Photos &amp; cocktail</h4><p>Sur le parvis, en musique</p></div></li>
+              <li class="program__item"><time>18h30</time><div><h4>Réception &amp; dîner</h4><p>Entrée des mariés et repas</p></div></li>
+              <li class="program__item"><time>21h30</time><div><h4>Ouverture du bal</h4><p>Première danse des mariés</p></div></li>
+              <li class="program__item"><time>23h00</time><div><h4>Pièce montée &amp; soirée</h4><p>On danse jusqu'au bout de la nuit</p></div></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. COMPTE À REBOURS ============ -->
+    <section class="countdown" id="compte" aria-labelledby="countdownTitle">
+      <div class="countdown__bg"><img src="assets/img/rings.webp" alt="" aria-hidden="true" width="736" height="1313" loading="lazy"></div>
+      <div class="countdown__veil"></div>
+      <canvas class="bokeh" data-count="24" aria-hidden="true"></canvas>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="container countdown__inner">
+        <p class="eyebrow eyebrow--center reveal"><span class="eyebrow__line"></span><span class="eyebrow__num">06</span>Compte à rebours<span class="eyebrow__line"></span></p>
+        <h2 class="section__title reveal" id="countdownTitle">Le grand jour <em>approche</em></h2>
+        <div class="timer reveal" role="timer" aria-live="off">
+          <div class="timer__unit"><span class="timer__value" data-unit="days">00</span><span class="timer__label">Jours</span></div>
+          <span class="timer__sep" aria-hidden="true">:</span>
+          <div class="timer__unit"><span class="timer__value" data-unit="hours">00</span><span class="timer__label">Heures</span></div>
+          <span class="timer__sep" aria-hidden="true">:</span>
+          <div class="timer__unit"><span class="timer__value" data-unit="minutes">00</span><span class="timer__label">Minutes</span></div>
+          <span class="timer__sep" aria-hidden="true">:</span>
+          <div class="timer__unit"><span class="timer__value" data-unit="seconds">00</span><span class="timer__label">Secondes</span></div>
+        </div>
+        <p class="countdown__note reveal"><span data-bind="dateLong">Samedi 12 décembre 2026</span> · <span data-bind="city">Libreville, Gabon</span></p>
+      </div>
+    </section>
+
+    <!-- ============ 8. RSVP ============ -->
+    <section class="section rsvp" id="rsvp">
+      <div class="container rsvp__grid">
+        <div class="rsvp__aside">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span><span class="eyebrow__num">07</span>RSVP</p>
+          <h2 class="section__title reveal">Serez-vous <em>des nôtres</em>&nbsp;?</h2>
+          <p class="section__intro reveal">Votre réponse nous aide à tout préparer avec soin. Merci de confirmer avant le <strong data-bind="rsvpDeadline">15 novembre 2026</strong>.</p>
+
+          <a href="#" class="info-card info-card--wa reveal js-wa-quick" target="_blank" rel="noopener">
+            <span class="info-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-wa"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.3zM12 21.7a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.1 6.4 6.5 2 12 2c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.5-4.4 9.8-9.9 9.8zm5.4-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+            <span><small>Plus rapide</small><strong>Confirmer via WhatsApp</strong></span>
+            <svg class="info-card__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+          </a>
+          <p class="rsvp__privacy reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            Vos coordonnées restent privées : seuls les mariés y ont accès.
+          </p>
+        </div>
+
+        <div class="rsvp__card reveal">
+          <form class="form" id="rsvpForm" novalidate>
+            <div class="choice" role="radiogroup" aria-label="Votre réponse">
+              <label class="choice__opt">
+                <input type="radio" name="attending" value="yes" checked>
+                <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>Je viens avec joie</span>
+              </label>
+              <label class="choice__opt">
+                <input type="radio" name="attending" value="no">
+                <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 15s1.5-2 4-2 4 2 4 2"/><circle cx="12" cy="12" r="9"/><path d="M9 9h.01M15 9h.01"/></svg>Je ne pourrai pas venir</span>
+              </label>
+            </div>
+
+            <div class="field">
+              <input type="text" id="f-name" name="name" placeholder=" " required maxlength="80" autocomplete="name">
+              <label for="f-name">Nom et prénom *</label>
+            </div>
+            <div class="field">
+              <input type="text" id="f-contact" name="contact" placeholder=" " required maxlength="120" autocomplete="email" inputmode="email">
+              <label for="f-contact">E-mail ou numéro WhatsApp *</label>
+            </div>
+
+            <div class="form__collapse is-open" id="attendingFields">
+              <div class="form__collapse-inner">
+                <div class="stepper">
+                  <span class="stepper__label" id="guestsLabel">Accompagnants</span>
+                  <div class="stepper__ctrl">
+                    <button type="button" class="stepper__btn" data-step="-1" aria-label="Retirer un accompagnant">−</button>
+                    <output class="stepper__value" id="guestsValue" aria-live="polite" aria-labelledby="guestsLabel">0</output>
+                    <button type="button" class="stepper__btn" data-step="1" aria-label="Ajouter un accompagnant">+</button>
+                  </div>
+                  <input type="hidden" name="guests" value="0">
+                </div>
+                <div class="field">
+                  <input type="text" id="f-diet" name="diet" placeholder=" " maxlength="200">
+                  <label for="f-diet">Régime alimentaire ou allergies</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <textarea id="f-message" name="message" rows="3" placeholder=" " maxlength="500"></textarea>
+              <label for="f-message">Un mot pour les mariés</label>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" name="public_message" value="1" checked>
+              <span class="check__box" aria-hidden="true"></span>
+              <span>Afficher mon prénom et mon message dans la liste « Ils seront présents »</span>
+            </label>
+
+            <!-- Piège anti-robots : laissez vide -->
+            <div class="hp" aria-hidden="true"><label>Site web <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+            <p class="form__error" id="formError" role="alert"></p>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--gold btn--lg magnetic form__submit">
+                <span class="form__submit-label">Envoyer ma réponse</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+            </div>
+          </form>
+
+          <div class="success" id="rsvpSuccess" hidden tabindex="-1">
+            <svg class="success__check" viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="success__circle" cx="60" cy="60" r="54"/>
+              <path class="success__tick" d="M38 62l15 15 30-32"/>
+            </svg>
+            <h3 class="success__title">Merci, votre présence est confirmée.</h3>
+            <p class="success__text">Nous avons hâte de célébrer ce jour avec vous.</p>
+            <div class="success__actions">
+              <a href="#" class="btn btn--gold js-wa-after" target="_blank" rel="noopener"><span>Prévenir aussi par WhatsApp</span></a>
+              <button type="button" class="btn btn--ghost js-rsvp-again"><span>Modifier ma réponse</span></button>
+            </div>
+          </div>
+          <canvas class="confetti" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. INVITÉS AYANT CONFIRMÉ ============ -->
+    <section class="section theme-light guests" id="invites">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line"></span><span class="eyebrow__num">08</span>Ils seront présents<span class="eyebrow__line"></span></p>
+          <h2 class="section__title"><span class="guests__count" id="guestsCount">0</span> <em id="guestsCountLabel">invités</em> ont confirmé leur présence</h2>
+          <p class="section__intro">Merci à chacun d'entre vous. Cette liste se met à jour à chaque confirmation.</p>
+        </header>
+        <ul class="guests__list" id="guestsList" aria-live="polite"></ul>
+        <p class="guests__empty" id="guestsEmpty" hidden>Soyez le premier ou la première à confirmer votre présence&nbsp;!</p>
+        <div class="guests__more"><button type="button" class="btn btn--outline" id="guestsMore" hidden><span>Voir plus</span></button></div>
+      </div>
+    </section>
+
+    <!-- ============ 10. CADEAUX ============ -->
+    <section class="section gifts" id="cadeaux">
+      <div class="container gifts__inner">
+        <div class="gifts__icon reveal" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M12 8S10.5 3 7.5 3a2.5 2.5 0 0 0 0 5M12 8s1.5-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg>
+        </div>
+        <p class="eyebrow eyebrow--center reveal"><span class="eyebrow__line"></span><span class="eyebrow__num">09</span>Liste de mariage<span class="eyebrow__line"></span></p>
+        <h2 class="section__title reveal">Votre présence est <em>notre plus beau cadeau</em></h2>
+        <p class="section__intro reveal">Si vous souhaitez néanmoins nous gâter, une cagnotte nous aidera à construire notre premier foyer et à vivre notre voyage de noces.</p>
+        <div class="gifts__actions reveal">
+          <a href="#" class="btn btn--gold btn--lg magnetic js-gift" target="_blank" rel="noopener"><span>Participer à la cagnotte</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+          <button type="button" class="btn btn--ghost btn--lg js-copy-momo"><span data-bind="mobileMoney">Airtel Money : +241 074 62 87 05</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 11. FAQ ============ -->
+    <section class="section theme-light faq" id="faq">
+      <div class="container faq__inner">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span><span class="eyebrow__num">10</span>Questions fréquentes</p>
+          <h2 class="section__title">Bon à <em>savoir</em></h2>
+          <p class="section__intro">Une autre question&nbsp;? Écrivez-nous sur WhatsApp, nous vous répondrons avec plaisir.</p>
+        </header>
+        <div class="accordion">
+          <div class="acc reveal">
+            <h3><button type="button" class="acc__btn" aria-expanded="false" aria-controls="faq1" id="faq1-b">Puis-je venir avec un accompagnant&nbsp;?<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="faq1" role="region" aria-labelledby="faq1-b"><div><p>Bien sûr, si votre invitation le mentionne. Indiquez simplement le nombre d'accompagnants dans le formulaire de confirmation afin que nous prévoyions une place pour chacun.</p></div></div>
+          </div>
+          <div class="acc reveal">
+            <h3><button type="button" class="acc__btn" aria-expanded="false" aria-controls="faq2" id="faq2-b">Quel est le dress code&nbsp;?<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="faq2" role="region" aria-labelledby="faq2-b"><div><p>Tenue de soirée chic dans les tons ivoire, champagne, doré ou noir. Nous vous remercions d'éviter le blanc intégral, réservé à la mariée.</p></div></div>
+          </div>
+          <div class="acc reveal">
+            <h3><button type="button" class="acc__btn" aria-expanded="false" aria-controls="faq3" id="faq3-b">Y a-t-il un parking&nbsp;?<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="faq3" role="region" aria-labelledby="faq3-b"><div><p>Oui, un parking gratuit et surveillé est disponible sur les deux lieux. Des voituriers vous accueilleront à la réception.</p></div></div>
+          </div>
+          <div class="acc reveal">
+            <h3><button type="button" class="acc__btn" aria-expanded="false" aria-controls="faq4" id="faq4-b">Jusqu'à quand puis-je confirmer ma présence&nbsp;?<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="faq4" role="region" aria-labelledby="faq4-b"><div><p>Merci de nous répondre avant le <strong data-bind="rsvpDeadline">15 novembre 2026</strong>. Vous pouvez modifier votre réponse à tout moment en renvoyant le formulaire avec le même e-mail ou numéro.</p></div></div>
+          </div>
+          <div class="acc reveal">
+            <h3><button type="button" class="acc__btn" aria-expanded="false" aria-controls="faq5" id="faq5-b">Comment me rendre sur les lieux&nbsp;?<span class="acc__icon" aria-hidden="true"></span></button></h3>
+            <div class="acc__panel" id="faq5" role="region" aria-labelledby="faq5-b"><div><p>Les deux adresses sont accessibles en voiture ou en taxi. Utilisez les boutons «&nbsp;Voir sur Google Maps&nbsp;» de la section <a href="#details">Le jour J</a> pour lancer l'itinéraire depuis votre téléphone.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 12. PIED DE PAGE ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wordmark" aria-hidden="true">
+        <span data-bind="groom">Daniel</span><em>&amp;</em><span data-bind="bride">Grâce</span>
+      </div>
+      <div class="footer__top">
+        <div>
+          <p class="footer__hashtag" data-bind="hashtag">#DanielEtGrace2026</p>
+          <p class="footer__thanks">Merci de faire partie de notre histoire. Partagez vos photos du jour J avec notre hashtag&nbsp;!</p>
+        </div>
+        <nav class="footer__col" aria-label="Liens rapides">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#rsvp">Confirmer ma présence</a></li>
+            <li><a href="#details">Localisation</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>Avec amour · <span data-bind="dateShort">12 · 12 · 2026</span></p>
+        <a href="#accueil" class="footer__top-link">Retour en haut <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton RSVP flottant (mobile) -->
+  <a href="#rsvp" class="rsvp-float" aria-label="Confirmer ma présence">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>
+    <span>Confirmer</span>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie photo" hidden>
+    <button type="button" class="lightbox__close" aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <figure class="lightbox__figure">
+      <img src="data:," alt="" class="lightbox__img">
+      <figcaption class="lightbox__caption"><span class="lightbox__title"></span><span class="lightbox__count"></span></figcaption>
+    </figure>
+    <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Photo suivante"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Curseur personnalisé (ordinateur) -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
